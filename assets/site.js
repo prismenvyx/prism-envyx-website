@@ -19,3 +19,9 @@ if(document.body && document.body.hasAttribute('data-shop-page')){
  tabs.forEach(t=>t.addEventListener('click',()=>{active=t.dataset.filter;apply();document.querySelector('.shop-controls')?.scrollIntoView({behavior:'smooth',block:'start'})}));
  search?.addEventListener('input',apply); apply();
 }
+
+// Prefill booking enquiry from service/product links
+const params=new URLSearchParams(location.search);
+const requested=params.get('service')||params.get('product');
+const serviceField=document.querySelector('select[name="service"]');
+if(requested&&serviceField){const option=[...serviceField.options].find(o=>o.value.toLowerCase()===requested.toLowerCase()||o.textContent.toLowerCase()===requested.toLowerCase());if(option)serviceField.value=option.value;}
