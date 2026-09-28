@@ -124,3 +124,8 @@ footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-s
  .premium-shop-hero{padding:65px 0}.shop-hero-image{height:360px}.premium-product-grid{grid-template-columns:1fr}
  .premium-category{padding:58px 0}.premium-product .product-info{padding-top:18px}
 }
+
+/* Larger brand lockup for clear desktop and mobile readability */
+.brand img{width:300px}.footer-brand img{width:250px}
+@media(max-width:900px){.brand img{width:250px}}
+@media(max-width:520px){.brand img{width:225px}.footer-brand img{width:210px}}
