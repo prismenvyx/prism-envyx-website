@@ -129,3 +129,53 @@ footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-s
 .brand img{width:300px}.footer-brand img{width:250px}
 @media(max-width:900px){.brand img{width:250px}}
 @media(max-width:520px){.brand img{width:225px}.footer-brand img{width:210px}}
+
+/* Cinematic video homepage hero */
+.video-header{position:absolute;top:0;left:0;width:100%;z-index:30;background:transparent;border:0;color:#fff}
+.video-header .nav{min-height:88px}
+.video-header .navlinks{align-items:center;color:#fff}
+.video-header .navlinks a:hover{text-decoration:none;opacity:.78}
+.video-header .nav-cta{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.75);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.video-header .brand img{filter:brightness(0) invert(1);width:190px}
+.video-header .menu{color:#fff}
+.video-hero{position:relative;min-height:100svh;height:760px;overflow:hidden;background:#061b25;color:#fff;display:flex;align-items:center}
+.video-hero-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.video-hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(2,25,35,.96) 0%,rgba(2,25,35,.84) 31%,rgba(2,25,35,.40) 63%,rgba(2,25,35,.38) 100%),linear-gradient(0deg,rgba(2,25,35,.62) 0%,rgba(2,25,35,.05) 55%,rgba(2,25,35,.56) 100%)}
+.video-hero-glow{position:absolute;z-index:2;inset:auto -10% 3% 28%;height:190px;background:radial-gradient(ellipse,rgba(226,73,132,.28),transparent 68%);filter:blur(18px);pointer-events:none}
+.video-hero-content{position:relative;z-index:4;padding-top:115px}
+.video-hero-content .eyebrow{color:rgba(255,255,255,.72);font-size:11px;margin-bottom:22px}
+.video-hero h1{font-family:Inter,Arial,sans-serif;font-size:clamp(52px,6.7vw,92px);line-height:.98;font-weight:400;letter-spacing:-.045em;max-width:850px;margin:0 0 25px}
+.video-hero h1 span{display:block;color:#fff}
+.video-hero h1 em{font-style:normal;background:linear-gradient(90deg,#ff6a4a,#e84884);-webkit-background-clip:text;background-clip:text;color:transparent}
+.video-hero-lead{max-width:590px;margin:0;color:rgba(255,255,255,.82);font-size:17px;line-height:1.75}
+.video-hero .actions{align-items:center;margin-top:30px}
+.video-btn-primary{background:linear-gradient(90deg,#df426f,#ef4f82);border:0;color:#fff;min-height:50px;padding:14px 22px;font-weight:600;letter-spacing:.02em;text-transform:none;border-radius:2px}
+.video-btn-primary span{font-size:19px;margin-left:14px;line-height:1}
+.video-text-link{color:#fff;font-size:12px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.65);padding-bottom:6px;margin-left:12px}
+.video-text-link span{margin-left:8px;font-size:16px}
+.video-hero-meta{display:flex;flex-wrap:wrap;gap:25px;margin-top:44px;color:rgba(255,255,255,.66);font-size:10px;letter-spacing:.13em;text-transform:uppercase}
+.video-hero-meta span{position:relative}
+.video-hero-meta span:not(:last-child):after{content:"";position:absolute;right:-14px;top:50%;width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,.55)}
+.video-hero-scroll{position:absolute;z-index:5;right:4%;bottom:28px;color:rgba(255,255,255,.68);font-size:9px;letter-spacing:.18em}
+.video-hero-scroll span{font-size:16px;margin-left:9px}
+@media(max-width:900px){
+ .video-header .nav{min-height:76px}.video-header .brand img{width:180px}
+ .video-hero{height:760px;min-height:100svh;align-items:flex-end;padding-bottom:65px}
+ .video-hero-content{padding-top:110px}
+ .video-hero-overlay{background:linear-gradient(90deg,rgba(2,25,35,.94),rgba(2,25,35,.56)),linear-gradient(0deg,rgba(2,25,35,.78),rgba(2,25,35,.18))}
+ .video-hero-media{object-position:center}
+ .video-hero h1{font-size:clamp(48px,10vw,72px)}
+ .video-hero-scroll{display:none}
+}
+@media(max-width:520px){
+ .video-header .brand img{width:165px}
+ .video-header .nav{padding:0 4%;min-height:72px}
+ .video-hero{height:760px;padding-bottom:48px}
+ .video-hero-content{padding-top:95px}
+ .video-hero h1{font-size:50px;line-height:1}
+ .video-hero-lead{font-size:15px;line-height:1.65}
+ .video-hero .actions{align-items:flex-start;flex-direction:column;gap:18px}
+ .video-text-link{margin-left:0}
+ .video-hero-meta{gap:16px;margin-top:32px;line-height:1.5}
+ .video-hero-meta span:not(:last-child):after{display:none}
+}
