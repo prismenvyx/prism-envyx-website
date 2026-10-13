@@ -302,3 +302,25 @@ footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-s
  .home-editorial-image{height:390px}.home-feature-points>div{padding:21px 0}
  .home-cta h2{font-size:48px}
 }
+
+
+/* 13 Oct 2026 — accessibility, legibility and online-only service presentation */
+.home-page .home-feature{background:#071d27!important;color:#fff!important}
+.home-page .home-feature .eyebrow{color:#f2b4c5!important}
+.home-page .home-feature-copy h2{color:#fff!important}
+.home-page .home-feature-copy h2 em{color:#ff8eaa!important}
+.home-page .home-feature-copy>p{color:#e0e8eb!important}
+.home-page .home-feature-points span{color:#fff!important}
+.home-page .home-feature-points p{color:#d4dfe3!important}
+.home-page .home-feature-points strong{color:#ff8eaa!important}
+.home-page .home-outline-btn{color:#fff!important;border-color:#fff!important}
+.home-page .home-outline-btn:hover{background:#fff!important;color:#071d27!important}
+.home-page .video-header{background:rgba(4,23,31,.84)!important;border-bottom:1px solid rgba(255,255,255,.14)!important}
+.home-page .video-header .brand img{width:260px!important;max-width:42vw;height:auto;filter:none!important;opacity:1!important}
+.home-page .video-header .navlinks a{color:#fff!important;text-shadow:0 1px 10px rgba(0,0,0,.25)}
+.home-page .video-header .navlinks .nav-cta{color:#fff!important;background:#c83e68!important;border-color:#c83e68!important}
+.home-page .video-header .menu{color:#fff!important}
+.home-page .home-editorial-copy .eyebrow,.home-page .home-feature-copy .eyebrow{font-weight:700}
+.home-page .home-service-image img,.home-page .home-editorial-image img,.service-card img{object-position:center}
+@media(max-width:900px){.home-page .video-header .brand img{width:220px!important;max-width:62vw}}
+@media(max-width:520px){.home-page .video-header .brand img{width:195px!important;max-width:64vw}}
