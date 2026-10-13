@@ -324,3 +324,20 @@ footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-s
 .home-page .home-service-image img,.home-page .home-editorial-image img,.service-card img{object-position:center}
 @media(max-width:900px){.home-page .video-header .brand img{width:220px!important;max-width:62vw}}
 @media(max-width:520px){.home-page .video-header .brand img{width:195px!important;max-width:64vw}}
+
+
+/* 13 Oct 2026 — unified brand identity and service-menu corrections */
+.brand img{filter:none!important;opacity:1!important}
+.video-header .brand img{filter:none!important}
+.home-page .video-header{background:rgba(248,244,239,.97)!important;border-bottom:1px solid #ddd3ca!important}
+.home-page .video-header .navlinks a{color:#17232a!important;text-shadow:none!important}
+.home-page .video-header .navlinks a:hover{color:#c83e68!important}
+.home-page .video-header .navlinks .nav-cta{color:#fff!important;background:#c83e68!important;border-color:#c83e68!important}
+.home-page .video-header .menu{color:#17232a!important}
+.home-page .video-header .nav-cta{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.service-menu .service-card{height:100%;display:flex;flex-direction:column}
+.service-menu .service-card .pad{display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.service-menu .service-card .card-link{margin-top:auto;padding-top:18px}
+.service-menu .service-card .price{margin-top:8px}
+@media(max-width:850px){.service-menu{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.service-menu{grid-template-columns:1fr}}
